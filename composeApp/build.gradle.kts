@@ -87,11 +87,11 @@ kotlin {
 }
 
 android {
-    namespace = "com.plcoding.bookpedia"
+    namespace = "com.keotsoft.bookpedia"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.plcoding.bookpedia"
+        applicationId = "com.keotsoft.bookpedia"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
@@ -119,11 +119,11 @@ dependencies {
 
 compose.desktop {
     application {
-        mainClass = "com.plcoding.bookpedia.MainKt"
+        mainClass = "com.keotsoft.bookpedia.MainKt"
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "com.plcoding.bookpedia"
+            packageName = "com.keotsoft.bookpedia"
             packageVersion = "1.0.0"
         }
     }
